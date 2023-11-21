@@ -71,9 +71,26 @@ header svg {
 .card figure {
   position: relative;
 }
+
+#alter-pic {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 0;
+}
+
+#alter-pic:hover {
+  display: none;
+}
 .card figure img {
   width: 100%;
   height: 100%;
+}
+
+.card figure img:hover {
+  display: hidden;
 }
 
 .card-footer h6 {
@@ -99,6 +116,11 @@ header svg {
   display: none;
 }
 
+.liked-item,
+.features {
+  z-index: 2;
+}
+
 .liked-item {
   position: absolute;
   text-align: center;
@@ -108,7 +130,6 @@ header svg {
   font-size: 30px;
   top: 0.3rem;
   right: 0;
-  z-index: 1;
 }
 
 #heart:hover {
@@ -158,3 +179,5 @@ footer .social {
   display: flex;
   gap: 0.5rem;
 }
+
+/***Bonus alternate pic on hover****/
