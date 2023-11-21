@@ -12,6 +12,10 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  color: lightgray;
+}
+
 header {
   background-color: #ff6900;
   padding-block: 0.5rem;
@@ -64,7 +68,9 @@ header svg {
   width: calc(100% / 3.2);
   position: relative;
 }
-
+.card figure {
+  position: relative;
+}
 .card figure img {
   width: 100%;
   height: 100%;
@@ -102,8 +108,53 @@ header svg {
   font-size: 30px;
   top: 0.3rem;
   right: 0;
+  z-index: 1;
 }
 
 #heart:hover {
   color: red;
+}
+.features {
+  position: absolute;
+  left: 0;
+  bottom: 2rem;
+  font-size: 14px;
+}
+.features span {
+  padding: 3px 5px;
+  color: #fff;
+}
+.sales {
+  background-color: #ff0000;
+}
+.eco {
+  background-color: #008000;
+}
+
+footer {
+  background-color: #222222;
+  color: #fff;
+  padding-block: 0.5rem;
+}
+
+footer .container {
+  width: 75%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer ul li {
+  list-style-type: none;
+}
+
+footer ul li a {
+  color: #fff;
+  font-size: 14px;
+}
+
+footer .info-link,
+footer .social {
+  display: flex;
+  gap: 0.5rem;
 }
