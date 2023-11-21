@@ -62,6 +62,7 @@ header svg {
 
 .card {
   width: calc(100% / 3.2);
+  position: relative;
 }
 
 .card figure img {
@@ -90,4 +91,19 @@ header svg {
 .card:nth-last-child(2) .price-old,
 .card:last-child .price-old {
   display: none;
+}
+
+.liked-item {
+  position: absolute;
+  text-align: center;
+  width: 2rem;
+  height: 2rem;
+  background-color: #fff;
+  font-size: 30px;
+  top: 0.3rem;
+  right: 0;
+}
+
+#heart:hover {
+  color: red;
 }
