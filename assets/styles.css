@@ -20,6 +20,11 @@ header {
   background-color: #ff6900;
   padding-block: 0.5rem;
   box-shadow: 0px 15px 10px -15px #111;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 3;
 }
 
 /*****header****/
@@ -53,7 +58,9 @@ header svg {
 }
 
 /*****main*****/
-
+main {
+  padding-top: 80px;
+}
 .container {
   width: 75%;
   margin: 0 auto;
