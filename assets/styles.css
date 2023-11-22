@@ -15,7 +15,7 @@ a {
 a:hover {
   color: lightgray;
 }
-
+/*****header****/
 header {
   background-color: #ff6900;
   padding-block: 0.5rem;
@@ -26,8 +26,6 @@ header {
   top: 0;
   z-index: 3;
 }
-
-/*****header****/
 
 header nav {
   width: 75%;
@@ -73,9 +71,9 @@ main {
 
 .card {
   width: calc(100% / 3.2);
-  position: relative;
 }
-.card figure {
+
+.img-container {
   position: relative;
 }
 
@@ -85,15 +83,16 @@ main {
   right: 0;
   top: 0;
   bottom: 0;
-  z-index: 0;
+  opacity: 0;
 }
 
 #alter-pic:hover {
-  display: none;
+  opacity: 1;
 }
 .card figure img {
   width: 100%;
   height: 100%;
+  opacity: 1;
 }
 
 .card figure img:hover {
